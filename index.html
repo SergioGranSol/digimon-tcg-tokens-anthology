@@ -27,7 +27,7 @@
       <h1 class="mx-auto my-5 text-primary fw-bolder fst-italic" style="font-size: 3rem; text-shadow: -5px -5px lightgrey;">CARD LIST</h1>
       <div class="row w-75 mx-auto">
         <div class="col-sm-12 col-md-4">
-          <div class="alert alert-important alert-dismissible bg-orange bg-gradient fw-bolder fst-italic border-0 rounded-5">
+          <div class="alert alert-important alert-dismissible bg-orange bg-gradient fs-5 fw-bolder fst-italic border-0 rounded-5">
             <a class="text-white" href="https://drive.google.com/drive/folders/1ndIeCYuNMCV2ndcP3DeXLHFcaX9ZPXBJ?usp=drive_link">
               Go to Drive folder with fanmade tokens
             </a>
@@ -35,8 +35,8 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-8">
-          <div class="alert alert-important alert-dismissible bg-lime bg-gradient fw-bolder fst-italic border-0 rounded-5">
-            Wanna share more tokens?? Send the clean images and profiles of the artists by DM to <a href="https://x.com/SergioGranSol">SergioGranSol</a>
+          <div class="alert alert-important alert-dismissible bg-lime bg-gradient fs-5 fw-bolder fst-italic border-0 rounded-5">
+            Wanna share a token?? Send the clean image, profiles and the permission of the artist by DM to <a href="https://x.com/SergioGranSol">my X account</a> and I'll add the token card frames
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         </div>
@@ -75,6 +75,7 @@
           Digimon, Digital Monsters, and all related characters and monsters
           are the property of Akiyoshi Hondo and Toei Animation. Bandai too.
           This fanart page is intended for entertainment purposes only.
+          Each image belongs to their respective artists
         </div>
       </div>
     </footer>
@@ -223,6 +224,7 @@
           const btn = $(document.createElement("a"))
             .addClass(`btn btn-${key.toLowerCase().replace(" ", "-")} my-2 p-1 w-100`)
             .attr("href", value)
+            .attr("target", "_blank")
             .text(key.charAt(0).toUpperCase() + key.substring(1).toLowerCase());
           $("#card-info-modal-links").append(btn);
         }
