@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon TCG - Tokens Anthology</title>
+  <script type="text/javascript" src="./static/libs/fslightbox/js/index.js"></script>
+  <script type="text/javascript" src="./static/libs/tabler/js/tabler.min.js"></script>
+  <script type="text/javascript" src="./static/libs/jquery/js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="./static/js/config/constants.js"></script>
+  <link rel="stylesheet" type="text/css" href="./static/libs/tabler/css/tabler.min.css" />
+  <link rel="stylesheet" type="text/css" href="./static/css/customs.css" />
+  <link rel="shorcut icon" type="image/png" href="./static/img/icon.png">
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-wrapper">
+      <header class="navbar navbar-expand-md sticky-top d-print-none top-navbar rounded-top-2">
+        <img class="mx-4 my-2" src="./static/img/logo.png" alt="Digimon Card Game" style="max-width: 125px;">
+      </header>
+      <div class="alert alert-important alert-dismissible bg-yellow fw-bolder fst-italic border-0 p-1 text-center">
+        Tokens NOT for Sale!
+        <button type="button" class="btn-close p-2" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <h1 class="mx-auto my-5 text-primary fw-bolder fst-italic" style="font-size: 3rem; text-shadow: -5px -5px lightgrey;">CARD LIST</h1>
+      <div class="row w-75 mx-auto">
+        <div class="col-sm-12 col-md-4">
+          <div class="alert alert-important alert-dismissible bg-orange bg-gradient fs-5 fw-bolder fst-italic border-0 rounded-5">
+            <a class="text-white" href="https://drive.google.com/drive/folders/1ndIeCYuNMCV2ndcP3DeXLHFcaX9ZPXBJ?usp=drive_link">
+              Go to Drive folder with fanmade tokens
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <div class="alert alert-important alert-dismissible bg-lime bg-gradient fs-5 fw-bolder fst-italic border-0 rounded-5">
+            Wanna share a token?? Send the clean image, profiles and the permission of the artist by DM to <a href="https://x.com/SergioGranSol">my X account</a> and I'll add the token card frames
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mx-md-auto mx-4">
+        <div class="input-group input-group-sm mt-1">
+          <span class="input-group-text bg-primary text-white fw-bold rounded-start-2 ps-2 w-16">Token:</span>
+          <select class="form-select w-33" id="token" name="token" aria-label="token" onchange="findTokens();">
+            <option selected="" value="">Choose...</option>
+          </select>
+          <span class="input-group-text bg-primary text-white fw-bold w-16">Color:</span>
+          <select class="form-select rounded-end-2 w-33" id="color" name="color" aria-label="color" onchange="findTokens();">
+            <option selected="" value="">Choose...</option>
+          </select>
+        </div>
+        <div class="input-group input-group-sm mt-1">
+          <span class="input-group-text bg-primary text-white fw-bold rounded-start-2 ps-2 w-16">Artists or media:</span>
+          <select class="form-select w-33" id="artist" name="artist" aria-label="artist" onchange="findTokens();">
+            <option selected="" value="">Choose...</option>
+          </select>
+          <span class="input-group-text bg-primary text-white fw-bold w-16">Card type:</span>
+          <select class="form-select rounded-end-2 w-33" id="type" name="type" aria-label="type" onchange="findTokens();">
+            <option selected="" value="">Choose...</option>
+          </select>
+        </div>
+      </div>
+      <div id="cards-container" class="row my-4 pb-4 cards-container">
+        <div id="spinner-loading" class="spinner-border mx-auto my-5" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <footer class="footer footer-transparent bg-blue-lt py-2 px-5 border bordet-end-0 border-x-0 border-3">
+      <div class="row justify-content-between fw-bold">
+        <div class="col fs-6">
+          Digimon, Digital Monsters, and all related characters and monsters
+          are the property of Akiyoshi Hondo and Toei Animation. Bandai too.
+          This fanart page is intended for entertainment purposes only.
+          Each image belongs to their respective artists
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal modal-blur fade" id="card-info-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-4 border-5 border-red" id="card-info-modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fst-italic fw-bolder text-red" style="font-size: 2rem; font-weight: 900;" id="card-info-modal-title">CARD NAME</h1>
+          <div class="row">
+            <div class="col-8 text-center" id="card-info-modal-image">
+              <img src="static/img/en/Amon_of_Crimson_Flame_CF_1.png" alt="Amon of Crimson Flame" title="Amon of Crimson Flame">
+            </div>
+            <div class="col-4">
+              <h1 class="fst-italic fw-bolder fs-2 mb-0 text-red" id="card-info-modal-artist">Artist:</h1>
+              <h2 class="fs-4 mb-0">Artist</h2>
+              <div id="card-info-modal-links"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(() => {
+      for(const token in TOKENS) {
+        const option = document.createElement("option")
+        option.value = TOKENS[token].name;
+        option.text = TOKENS[token].name;
+        $("#token").append(option);
+
+        for(const card of TOKENS[token].cards) {
+          const div = $(document.createElement("div"))
+            .attr("data-color", TOKENS[token].name == "Empty Token" ? card.color : TOKENS[token].color)
+            .attr("data-type", card.type)
+            .attr("data-artist", card.artist)
+            .attr("data-token", TOKENS[token].name)
+            .addClass(`col-3 ${card.type == CARDS_TYPE.COLOR_FRAME && card.artist == ARTISTS.REFERENCE_BOOK.name ? "" : "d-none"}`);
+          const innerDiv = $(document.createElement("div"))
+            .attr("onclick", `showCardInfo('${div.attr("data-color")}', '${div.attr("data-artist")}', '${div.attr("data-token")}', '${card.img}');`)
+            .addClass("position-relative card-container");
+          const img = $(document.createElement("img"))
+            .attr("src", `static/img/en/${card.img}`)
+            .attr("alt", TOKENS[token].name)
+            .attr("title", TOKENS[token].name)
+            .addClass("position-absolute top-50 start-50 translate-middle");
+          if (TOKENS[token].name == TOKENS.SUKAMON.name) {
+            img.addClass("mini-card");
+          } else {
+            img.addClass("normal-card");
+          }
+          innerDiv.append(img);
+          if (card.type != CARDS_TYPE.NORMAL) {
+            const badgeType = $(document.createElement("span"))
+              .addClass("badge me-2 fw-bold position-absolute top-0 end-0")
+              .addClass(`bg-${div.attr("data-color").toLocaleLowerCase()} bg-gradient`)
+              .text(card.type);
+            if (div.attr("data-color") == COLORS.WHITE) {
+              badgeType.addClass("text-black");
+            }
+            innerDiv.append(badgeType);
+          }
+          if (TOKENS[token].name == TOKENS.SUKAMON.name) {
+            const badgeSize = $(document.createElement("span"))
+              .addClass("badge position-absolute bottom-0 start-50 translate-middle-x")
+              .addClass(`bg-${div.attr("data-color").toLocaleLowerCase()} bg-gradient`)
+              .text("Mini card (41x63mm)");
+            if (div.attr("data-color") == COLORS.WHITE) {
+              badgeSize.addClass("text-black");
+            }
+            innerDiv.append(badgeSize);
+          }
+          $("#cards-container").append(div.append(innerDiv));
+        }
+      }
+      for (const color in COLORS) {
+        const option = $(document.createElement("option"))
+          .val(COLORS[color])
+          .text(COLORS[color])
+        $("#color").append(option);
+      }
+      for (const artist in ARTISTS) {
+        const option = $(document.createElement("option"))
+          .val(ARTISTS[artist].name)
+          .text(ARTISTS[artist].name);
+        if (ARTISTS[artist].name == ARTISTS.REFERENCE_BOOK.name) {
+          option.prop("selected", "true");
+        }
+        $("#artist").append(option);
+      }
+      for (const type in CARDS_TYPE) {
+        const option = $(document.createElement("option"))
+          .val(CARDS_TYPE[type])
+          .text(CARDS_TYPE[type]);
+        if (CARDS_TYPE[type] == CARDS_TYPE.COLOR_FRAME) {
+          option.prop("selected", "true");
+        }
+        $("#type").append(option);
+      }
+      $("#spinner-loading").remove();
+    });
+
+    const findTokens = () => {
+      const token = $("#token").val();
+      const color = $("#color").val();
+      const artist = $("#artist").val();
+      const type = $("#type").val();
+      const cards = $("#cards-container > div");
+      for (const card of cards) {
+        const cardEl = $(card);
+        const showCard =
+          (token != "" ? cardEl.attr("data-token") == token : true) &&
+          (color != "" ? cardEl.attr("data-color") == color : true) &&
+          (artist != "" ? cardEl.attr("data-artist") == artist : true) &&
+          (type != "" ? cardEl.attr("data-type") == type : true);
+        if (showCard) {
+          cardEl.removeClass("d-none");
+        } else {
+          cardEl.addClass("d-none");
+        }
+      }
+    }
+
+    const showCardInfo = (colorCard, artistCard, token, img) => {
+      const isEmpty = !(artistCard && artistCard.trim() != "" && artistCard.trim() != "undefined");
+      const modal = new bootstrap.Modal("#card-info-modal");
+      for (const color in COLORS) {
+        $("#card-info-modal-content").removeClass(`border-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
+        $("#card-info-modal-title").removeClass(`text-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
+        $("#card-info-modal-artist").removeClass(`text-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
+      }
+      $("#card-info-modal-content").addClass(`border-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase() }`);
+      $("#card-info-modal-title").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).text(token);
+      $("#card-info-modal-artist").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).next().text(isEmpty ? "-" : artistCard);
+      $("#card-info-modal-image").empty().append($(document.createElement("img"))
+        .attr("src", `static/img/en/${img}`)
+        .attr("alt", img)
+        .attr("title", img));
+      $("#card-info-modal-links").empty();
+      if (!isEmpty) {
+        const artistProfile = ARTISTS[Object.keys(ARTISTS).find(artist => ARTISTS[artist].name == artistCard)].profile;
+        for (const [key, value] of Object.entries(artistProfile)) {
+          const btn = $(document.createElement("a"))
+            .addClass(`btn btn-${key.toLowerCase().replace(" ", "-")} my-2 p-1 w-100`)
+            .attr("href", value)
+            .attr("target", "_blank")
+            .text(key.charAt(0).toUpperCase() + key.substring(1).toLowerCase());
+          $("#card-info-modal-links").append(btn);
+        }
+      }
+      if (token == "Sukamon") {
+        $("#card-info-modal-links")
+          .append($(document.createElement("h1")).addClass("fst-italic fw-bolder fs-2 mb-0 text-muted").text("Usage"))
+          .append($(document.createElement("img")).addClass("rounded-4")
+            .attr("src", `static/img/Sukamon_Mini_card.png`)
+            .attr("alt", "Sukamon_Mini_card.png")
+            .attr("title", "Sukamon_Mini_card.png"));
+      }
+      modal.show();
+    }
+  </script>
+
+</body>
+
+</html>
