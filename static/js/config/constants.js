@@ -292,7 +292,14 @@ const TOKENS = {
             { img: "Rapidmon_4.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.NORMAL },
             { img: "Rapidmon_CF_4.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Rapidmon_FA_4.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Rapidmon_5.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.NORMAL },
+            { img: "Rapidmon_CF_5.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Rapidmon_FA_5.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Rapidmon_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.NORMAL },
+            { img: "Rapidmon_CF_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Rapidmon_FA_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.FULL_ART },
             { img: "Rapidmon_VP_1.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
+            { img: "Rapidmon_VP_2.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
         ]
     },
     KOHAGURUMON: {
