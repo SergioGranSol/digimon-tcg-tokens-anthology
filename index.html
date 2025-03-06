@@ -29,7 +29,7 @@
         <div class="col-sm-12 col-md-4">
           <div class="alert alert-important alert-dismissible bg-orange bg-gradient fs-5 fw-bolder fst-italic border-0 rounded-5">
             <a class="text-white" target="_blank" href="https://drive.google.com/drive/folders/1ndIeCYuNMCV2ndcP3DeXLHFcaX9ZPXBJ?usp=drive_link">
-              Go to Drive folder with fanmade tokens
+              Higher definition fanmade tokens in Drive folder
             </a>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
@@ -60,6 +60,13 @@
           <span class="input-group-text bg-primary text-white fw-bold w-16">Card type:</span>
           <select class="form-select rounded-end-2 w-33" id="type" name="type" aria-label="type" onchange="findTokens();">
             <option selected="" value="">Choose...</option>
+          </select>
+        </div>
+        <div class="input-group input-group-sm mt-1">
+          <span class="input-group-text bg-primary text-white fw-bold rounded-start-2 ps-2 w-16">Language:</span>
+          <select class="form-select w-33" id="language" name="language" aria-label="language" onchange="findTokens();">
+            <option selected="" value="en">English</option>
+            <option value="jp">Japanese</option>
           </select>
         </div>
       </div>
@@ -111,47 +118,8 @@
         $("#token").append(option);
 
         for(const card of TOKENS[token].cards) {
-          const div = $(document.createElement("div"))
-            .attr("data-color", TOKENS[token].name == "Empty Token" ? card.color : TOKENS[token].color)
-            .attr("data-type", card.type)
-            .attr("data-artist", card.artist)
-            .attr("data-token", TOKENS[token].name)
-            .addClass(`col-3 ${card.type == CARDS_TYPE.COLOR_FRAME && card.artist == ARTISTS.REFERENCE_BOOK.name ? "" : "d-none"}`);
-          const innerDiv = $(document.createElement("div"))
-            .attr("onclick", `showCardInfo('${div.attr("data-color")}', '${div.attr("data-artist")}', '${div.attr("data-token")}', '${card.img}');`)
-            .addClass("position-relative card-container");
-          const img = $(document.createElement("img"))
-            .attr("src", `static/img/en/${card.img}`)
-            .attr("alt", TOKENS[token].name)
-            .attr("title", TOKENS[token].name)
-            .addClass("position-absolute top-50 start-50 translate-middle");
-          if (TOKENS[token].name == TOKENS.SUKAMON.name) {
-            img.addClass("mini-card");
-          } else {
-            img.addClass("normal-card");
-          }
-          innerDiv.append(img);
-          if (card.type != CARDS_TYPE.NORMAL) {
-            const badgeType = $(document.createElement("span"))
-              .addClass("badge me-2 fw-bold position-absolute top-0 end-0")
-              .addClass(`bg-${div.attr("data-color").toLocaleLowerCase()} bg-gradient`)
-              .text(card.type);
-            if (div.attr("data-color") == COLORS.WHITE) {
-              badgeType.addClass("text-black");
-            }
-            innerDiv.append(badgeType);
-          }
-          if (TOKENS[token].name == TOKENS.SUKAMON.name) {
-            const badgeSize = $(document.createElement("span"))
-              .addClass("badge position-absolute bottom-0 start-50 translate-middle-x")
-              .addClass(`bg-${div.attr("data-color").toLocaleLowerCase()} bg-gradient`)
-              .text("Mini card (41x63mm)");
-            if (div.attr("data-color") == COLORS.WHITE) {
-              badgeSize.addClass("text-black");
-            }
-            innerDiv.append(badgeSize);
-          }
-          $("#cards-container").append(div.append(innerDiv));
+          addCard(token, card, "en");
+          addCard(token, card, "jp");
         }
       }
       for (const color in COLORS) {
@@ -181,11 +149,57 @@
       $("#spinner-loading").remove();
     });
 
+    const addCard = (token, card, language) => {
+      const div = $(document.createElement("div"))
+        .attr("data-color", TOKENS[token].name == "Empty Token" ? card.color : TOKENS[token].color)
+        .attr("data-type", card.type)
+        .attr("data-artist", card.artist)
+        .attr("data-language", language)
+        .attr("data-token", TOKENS[token].name)
+        .addClass(`col-3 ${card.type == CARDS_TYPE.COLOR_FRAME && card.artist == ARTISTS.REFERENCE_BOOK.name && language == "en" ? "" : "d-none"}`);
+      const innerDiv = $(document.createElement("div"))
+        .attr("onclick", `showCardInfo('${div.attr("data-color")}', '${div.attr("data-artist")}', '${div.attr("data-token")}', '${card.img}', '${div.attr("data-language")}');`)
+        .addClass("position-relative card-container");
+      const img = $(document.createElement("img"))
+        .attr("src", `static/img/${language}/${card.img}`)
+        .attr("alt", TOKENS[token].name)
+        .attr("title", TOKENS[token].name)
+        .addClass("position-absolute top-50 start-50 translate-middle");
+      if (TOKENS[token].name == TOKENS.SUKAMON.name) {
+        img.addClass("mini-card");
+      } else {
+        img.addClass("normal-card");
+      }
+      innerDiv.append(img);
+      if (card.type != CARDS_TYPE.NORMAL) {
+        const badgeType = $(document.createElement("span"))
+          .addClass("badge me-2 fw-bold position-absolute top-0 end-0")
+          .addClass(`bg-${div.attr("data-color").toLocaleLowerCase()} bg-gradient`)
+          .text(card.type);
+        if (div.attr("data-color") == COLORS.WHITE) {
+          badgeType.addClass("text-black");
+        }
+        innerDiv.append(badgeType);
+      }
+      if (TOKENS[token].name == TOKENS.SUKAMON.name) {
+        const badgeSize = $(document.createElement("span"))
+          .addClass("badge position-absolute bottom-0 start-50 translate-middle-x")
+          .addClass(`bg-${div.attr("data-color").toLocaleLowerCase()} bg-gradient`)
+          .text("Mini card (41x63mm)");
+        if (div.attr("data-color") == COLORS.WHITE) {
+          badgeSize.addClass("text-black");
+        }
+        innerDiv.append(badgeSize);
+      }
+      $("#cards-container").append(div.append(innerDiv));
+    }
+
     const findTokens = () => {
       const token = $("#token").val();
       const color = $("#color").val();
       const artist = $("#artist").val();
       const type = $("#type").val();
+      const language = $("#language").val();
       const cards = $("#cards-container > div");
       for (const card of cards) {
         const cardEl = $(card);
@@ -193,7 +207,8 @@
           (token != "" ? cardEl.attr("data-token") == token : true) &&
           (color != "" ? cardEl.attr("data-color") == color : true) &&
           (artist != "" ? cardEl.attr("data-artist") == artist : true) &&
-          (type != "" ? cardEl.attr("data-type") == type : true);
+          (type != "" ? cardEl.attr("data-type") == type : true) &&
+          (language != "" ? cardEl.attr("data-language") == language : true);
         if (showCard) {
           cardEl.removeClass("d-none");
         } else {
@@ -202,7 +217,7 @@
       }
     }
 
-    const showCardInfo = (colorCard, artistCard, token, img) => {
+    const showCardInfo = (colorCard, artistCard, token, img, language) => {
       const isEmpty = !(artistCard && artistCard.trim() != "" && artistCard.trim() != "undefined");
       const modal = new bootstrap.Modal("#card-info-modal");
       for (const color in COLORS) {
@@ -214,7 +229,7 @@
       $("#card-info-modal-title").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).text(token);
       $("#card-info-modal-artist").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).next().text(isEmpty ? "-" : artistCard);
       $("#card-info-modal-image").empty().append($(document.createElement("img"))
-        .attr("src", `static/img/en/${img}`)
+        .attr("src", `static/img/${language}/${img}`)
         .attr("alt", img)
         .attr("title", img));
       $("#card-info-modal-links").empty();
