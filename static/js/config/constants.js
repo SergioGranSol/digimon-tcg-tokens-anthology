@@ -20,7 +20,7 @@ const ARTISTS = {
     BAKAMAOKUN: { name: "bakamaokun", profile: { twitter: "https://x.com/bakamaokun" } },
     DEMONDRAMON: { name: "Demondramon", profile: { etsy: "https://www.etsy.com/mx/shop/IllustrationsBySam", instagram: "https://www.instagram.com/demondramon/" } },
     DIM_CARD: { name: "Vital Bracelet Digital Monster DIM Card", profile: { "digimon net": "https://digimon.net/" } },
-    ENRIQUE: { name: "Enrique", profile: { twitter: "https://x.com/Enrique_Digica" } },
+    ENRIQUE: { name: "Enrique", profile: { twitter: "https://x.com/Enrique_Digica", pixiv: "https://www.pixiv.net/en/users/57057371" } },
     HEKITO: { name: "Hekito", profile: { deviantart: "https://www.deviantart.com/hekitodigimon" } },
     INO_XLR: { name: "INO_XLR", profile: { twitter: "https://x.com/INO_XLR" } },
     IRASA: { name: "Irasa", profile: { twitter: "https://x.com/irasadesu" } },
@@ -300,6 +300,12 @@ const TOKENS = {
             { img: "Rapidmon_FA_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.FULL_ART },
             { img: "Rapidmon_VP_1.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
             { img: "Rapidmon_VP_2.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
+            { img: "Rapidmon_7.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Rapidmon_CF_7.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Rapidmon_FA_7.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Rapidmon_8.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Rapidmon_CF_8.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Rapidmon_FA_8.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     KOHAGURUMON: {
@@ -324,6 +330,18 @@ const TOKENS = {
             { img: "KoHagurumon_6.png", artist: ARTISTS.HEKITO.name, type: CARDS_TYPE.NORMAL },
             { img: "KoHagurumon_CF_6.png", artist: ARTISTS.HEKITO.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "KoHagurumon_FA_6.png", artist: ARTISTS.HEKITO.name, type: CARDS_TYPE.FULL_ART },
+            { img: "KoHagurumon_7.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "KoHagurumon_CF_7.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "KoHagurumon_FA_7.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "KoHagurumon_8.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "KoHagurumon_CF_8.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "KoHagurumon_FA_8.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "KoHagurumon_9.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "KoHagurumon_CF_9.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "KoHagurumon_FA_9.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "KoHagurumon_10.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "KoHagurumon_CF_10.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "KoHagurumon_FA_10.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     FUJITSUMON: {
@@ -411,6 +429,12 @@ const TOKENS = {
             { img: "Atho_René_&_Por_9.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.NORMAL },
             { img: "Atho_René_&_Por_CF_9.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Atho_René_&_Por_FA_9.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Atho_René_&_Por_10.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Atho_René_&_Por_CF_10.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Atho_René_&_Por_FA_10.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Atho_René_&_Por_11.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Atho_René_&_Por_CF_11.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Atho_René_&_Por_FA_11.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     DIABOROMON: {
