@@ -161,7 +161,7 @@
         .attr("onclick", `showCardInfo('${div.attr("data-color")}', '${div.attr("data-artist")}', '${div.attr("data-token")}', '${card.img}', '${div.attr("data-language")}');`)
         .addClass("position-relative card-container");
       const img = $(document.createElement("img"))
-        .attr("src", `static/img/${language}/${card.img}`)
+        .attr(card.type == CARDS_TYPE.COLOR_FRAME && card.artist == ARTISTS.REFERENCE_BOOK.name && language == "en" ? "src" : "data-src", `static/img/${language}/${card.img}`)
         .attr("alt", TOKENS[token].name)
         .attr("title", TOKENS[token].name)
         .addClass("position-absolute top-50 start-50 translate-middle");
@@ -211,6 +211,10 @@
           (language != "" ? cardEl.attr("data-language") == language : true);
         if (showCard) {
           cardEl.removeClass("d-none");
+          const img = cardEl.children(":first").children(":first");
+          if (typeof img.attr("src") === 'undefined' || img.attr("src") === false) {
+            img.attr("src", img.data("src"));
+          }
         } else {
           cardEl.addClass("d-none");
         }
@@ -218,7 +222,7 @@
     }
 
     const showCardInfo = (colorCard, artistCard, token, img, language) => {
-      const isEmpty = !(artistCard && artistCard.trim() != "" && artistCard.trim() != "undefined");
+      const isEmpty = !(artistCard && artistCard.trim() != "" && artistCard.trim() != 'undefined');
       const modal = new bootstrap.Modal("#card-info-modal");
       for (const color in COLORS) {
         $("#card-info-modal-content").removeClass(`border-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
