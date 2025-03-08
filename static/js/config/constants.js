@@ -26,15 +26,15 @@ const ARTISTS = {
     IRASA: { name: "Irasa", profile: { twitter: "https://x.com/irasadesu" } },
     KOH_TSURANUKI: { name: "Koh_Tsuranuki", profile: { twitter: "https://x.com/Koh_Tsuranuki" } },
     LBRIGHTBLADEL: { name: "lBrightBladel", profile: { twitter: "https://x.com/lbrightbladel", bluesky: "https://bsky.app/profile/lbrightbladel.bsky.social" } },
-    PROFILE: { name: "Research report storage by Agumon Expert Digimon profile", profile: { "digimon net": "https://digimon.net/" } },
-    REFERENCE_BOOK: { name: "Digimon Reference Book", profile: { "digimon net": "https://digimon.net/" } },
+    PROFILE: { name: "Research Report Storage", profile: { "digimon net": "https://digimon.net/profile/" } },
+    REFERENCE_BOOK: { name: "Digimon Reference Book", profile: { "digimon net": "https://digimon.net/reference/" } },
     RERAID: { name: "_reRaid", profile: { twitter: "https://x.com/_reRaid", pixiv: "https://www.pixiv.net/en/users/4701422", bluesky: "https://bsky.app/profile/reraid.bsky.social", artstation: "https://www.artstation.com/donghyeok" } },
     SHARKMON: { name: "Sharkmon", profile: { deviantart: "https://www.deviantart.com/sharkmon", naver: "https://blog.naver.com/tmfrl3316" } },
     SINOBALI: { name: "Sinobali", profile: { web: "https://sinobali.com/", twitter: "https://x.com/sinobali", instagram: "https://www.instagram.com/sinobali_digimon", patreon: "https://www.patreon.com/sinobali" } },
     SPARERIBS: { name: "Spareribs", profile: { twitter: "https://x.com/Spareribs_777", pixiv: "https://www.pixiv.net/en/users/47170637" } },
     TAI: { name: "Tai", profile: { twitter: "https://x.com/cheungsk1213" } },
     TEASPOON: { name : "Teaspoon", profile: { twitter: "https://x.com/Teas_poon" } },
-    TRINITY_BURST: { name: "Trinity Burst Option Card", profile: { "digimon net": "https://digimon.net/" } },
+    TRINITY_BURST: { name: "Trinity Burst Option Card", profile: { "digimon net": "https://digimoncard.com/" } },
     VPET: { name: "Digimon V-Pet", profile: { "digimon net": "https://digimon.net/" } },
 }
 

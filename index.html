@@ -53,7 +53,7 @@
           </select>
         </div>
         <div class="input-group input-group-sm mt-1">
-          <span class="input-group-text bg-primary text-white fw-bold rounded-start-2 ps-2 w-16">Artists or media:</span>
+          <span class="input-group-text bg-primary text-white fw-bold rounded-start-2 ps-2 w-16">Illustration:</span>
           <select class="form-select w-33" id="artist" name="artist" aria-label="artist" onchange="findTokens();">
             <option selected="" value="">Choose...</option>
           </select>
@@ -99,7 +99,9 @@
               <img src="static/img/en/Amon_of_Crimson_Flame_CF_1.png" alt="Amon of Crimson Flame" title="Amon of Crimson Flame">
             </div>
             <div class="col-4">
-              <h1 class="fst-italic fw-bolder fs-2 mb-0 text-red" id="card-info-modal-artist">Artist:</h1>
+              <h1 class="fst-italic fw-bolder fs-2 mb-0 text-red" id="card-info-modal-color">&#8718; Color:</h1>
+              <h2 class="fs-4 mb-0">Color</h2>
+              <h1 class="fst-italic fw-bolder fs-2 mb-0 text-red" id="card-info-modal-artist">&#8718; Illustration:</h1>
               <h2 class="fs-4 mb-0">Artist</h2>
               <div id="card-info-modal-links"></div>
             </div>
@@ -228,16 +230,19 @@
         $("#card-info-modal-content").removeClass(`border-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
         $("#card-info-modal-title").removeClass(`text-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
         $("#card-info-modal-artist").removeClass(`text-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
+        $("#card-info-modal-color").removeClass(`text-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
       }
       $("#card-info-modal-content").addClass(`border-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase() }`);
       $("#card-info-modal-title").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).text(token);
       $("#card-info-modal-artist").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).next().text(isEmpty ? "-" : artistCard);
+      $("#card-info-modal-color").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).next().text(colorCard);
       $("#card-info-modal-image").empty().append($(document.createElement("img"))
         .attr("src", `static/img/${language}/${img}`)
         .attr("alt", img)
         .attr("title", img));
       $("#card-info-modal-links").empty();
       if (!isEmpty) {
+        $("#card-info-modal-links").append($(document.createElement("h1")).addClass(`fst-italic fw-bolder fs-2 mb-0 text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).text("\u220E Links:"))
         const artistProfile = ARTISTS[Object.keys(ARTISTS).find(artist => ARTISTS[artist].name == artistCard)].profile;
         for (const [key, value] of Object.entries(artistProfile)) {
           const btn = $(document.createElement("a"))
@@ -250,7 +255,7 @@
       }
       if (token == "Sukamon") {
         $("#card-info-modal-links")
-          .append($(document.createElement("h1")).addClass("fst-italic fw-bolder fs-2 mb-0 text-muted").text("Usage"))
+          .append($(document.createElement("h1")).addClass("fst-italic fw-bolder fs-2 mb-0 text-muted").text("\u220E Usage"))
           .append($(document.createElement("img")).addClass("rounded-4")
             .attr("src", `static/img/Sukamon_Mini_card.png`)
             .attr("alt", "Sukamon_Mini_card.png")
