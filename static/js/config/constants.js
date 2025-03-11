@@ -209,6 +209,12 @@ const TOKENS = {
             { img: "Pipe_Fox_19.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.NORMAL },
             { img: "Pipe_Fox_CF_19.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Pipe_Fox_FA_19.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Pipe_Fox_20.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Pipe_Fox_CF_20.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Pipe_Fox_FA_20.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Pipe_Fox_21.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Pipe_Fox_CF_21.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Pipe_Fox_FA_21.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     TAOMON: {
