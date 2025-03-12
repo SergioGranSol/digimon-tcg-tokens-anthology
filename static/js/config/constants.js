@@ -441,6 +441,9 @@ const TOKENS = {
             { img: "Atho_René_&_Por_11.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
             { img: "Atho_René_&_Por_CF_11.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Atho_René_&_Por_FA_11.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Atho_René_&_Por_12.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.NORMAL },
+            { img: "Atho_René_&_Por_CF_12.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Atho_René_&_Por_FA_12.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     DIABOROMON: {
