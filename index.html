@@ -63,7 +63,12 @@
           </select>
         </div>
         <div class="input-group input-group-sm mt-1">
-          <span class="input-group-text bg-primary text-white fw-bold rounded-start-2 ps-2 w-16">Language:</span>
+          <span class="input-group-text bg-primary text-white fw-bold rounded-start-2 ps-2 w-16">Official card:</span>
+          <select class="form-select w-33" id="official" name="official" aria-label="official" onchange="findTokens();">
+            <option value="true">Yes</option>
+            <option selected="" value="false">No</option>
+          </select>
+          <span class="input-group-text bg-primary text-white fw-bold w-16">Language:</span>
           <select class="form-select w-33" id="language" name="language" aria-label="language" onchange="findTokens();">
             <option selected="" value="en">English</option>
             <option value="jp">Japanese</option>
@@ -157,6 +162,7 @@
         .attr("data-type", card.type)
         .attr("data-artist", card.artist)
         .attr("data-language", language)
+        .attr("data-official", card.official ? card.official : false)
         .attr("data-token", TOKENS[token].name)
         .addClass(`col-3 ${card.type == CARDS_TYPE.COLOR_FRAME && card.artist == ARTISTS.REFERENCE_BOOK.name && language == "en" ? "" : "d-none"}`);
       const innerDiv = $(document.createElement("div"))
@@ -202,6 +208,7 @@
       const artist = $("#artist").val();
       const type = $("#type").val();
       const language = $("#language").val();
+      const official = $("#official").val();
       const cards = $("#cards-container > div");
       for (const card of cards) {
         const cardEl = $(card);
@@ -210,7 +217,8 @@
           (color != "" ? cardEl.attr("data-color") == color : true) &&
           (artist != "" ? cardEl.attr("data-artist") == artist : true) &&
           (type != "" ? cardEl.attr("data-type") == type : true) &&
-          (language != "" ? cardEl.attr("data-language") == language : true);
+          (language != "" ? cardEl.attr("data-language") == language : true) &&
+          (official != "" ? cardEl.attr("data-official") == official : true);
         if (showCard) {
           cardEl.removeClass("d-none");
           const img = cardEl.children(":first").children(":first");
@@ -227,22 +235,24 @@
       const isEmpty = !(artistCard && artistCard.trim() != "" && artistCard.trim() != 'undefined');
       const modal = new bootstrap.Modal("#card-info-modal");
       for (const color in COLORS) {
-        $("#card-info-modal-content").removeClass(`border-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
-        $("#card-info-modal-title").removeClass(`text-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
-        $("#card-info-modal-artist").removeClass(`text-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
-        $("#card-info-modal-color").removeClass(`text-${COLORS[color].toLowerCase() == "white" ? "muted" : COLORS[color].toLowerCase()}`);
+        const mutedBorder = COLORS[color].toLowerCase() == "white" || COLORS[color].toLowerCase() == "none";
+        $("#card-info-modal-content").removeClass(`border-${mutedBorder ? "muted" : COLORS[color].toLowerCase()}`);
+        $("#card-info-modal-title").removeClass(`text-${mutedBorder ? "muted" : COLORS[color].toLowerCase()}`);
+        $("#card-info-modal-artist").removeClass(`text-${mutedBorder ? "muted" : COLORS[color].toLowerCase()}`);
+        $("#card-info-modal-color").removeClass(`text-${mutedBorder ? "muted" : COLORS[color].toLowerCase()}`);
       }
-      $("#card-info-modal-content").addClass(`border-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase() }`);
-      $("#card-info-modal-title").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).text(token);
-      $("#card-info-modal-artist").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).next().text(isEmpty ? "-" : artistCard);
-      $("#card-info-modal-color").addClass(`text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).next().text(colorCard);
+      const mutedBorder = colorCard.toLowerCase() == "white" || colorCard.toLowerCase() == "none";
+      $("#card-info-modal-content").addClass(`border-${mutedBorder ? "muted" : colorCard.toLowerCase() }`);
+      $("#card-info-modal-title").addClass(`text-${mutedBorder ? "muted" : colorCard.toLowerCase()}`).text(token);
+      $("#card-info-modal-artist").addClass(`text-${mutedBorder ? "muted" : colorCard.toLowerCase()}`).next().text(isEmpty ? "-" : artistCard);
+      $("#card-info-modal-color").addClass(`text-${mutedBorder ? "muted" : colorCard.toLowerCase()}`).next().text(colorCard);
       $("#card-info-modal-image").empty().append($(document.createElement("img"))
         .attr("src", `static/img/${language}/${img}`)
         .attr("alt", img)
         .attr("title", img));
       $("#card-info-modal-links").empty();
       if (!isEmpty) {
-        $("#card-info-modal-links").append($(document.createElement("h1")).addClass(`fst-italic fw-bolder fs-2 mb-0 text-${colorCard.toLowerCase() == "white" ? "muted" : colorCard.toLowerCase()}`).text("\u220E Links:"))
+        $("#card-info-modal-links").append($(document.createElement("h1")).addClass(`fst-italic fw-bolder fs-2 mb-0 text-${mutedBorder ? "muted" : colorCard.toLowerCase()}`).text("\u220E Links:"))
         const artistProfile = ARTISTS[Object.keys(ARTISTS).find(artist => ARTISTS[artist].name == artistCard)].profile;
         for (const [key, value] of Object.entries(artistProfile)) {
           const btn = $(document.createElement("a"))
