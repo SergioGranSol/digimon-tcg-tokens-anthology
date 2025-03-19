@@ -1,4 +1,5 @@
 const COLORS = {
+    NONE: "None",
     RED: "Red",
     BLUE: "Blue",
     YELLOW: "Yellow",
@@ -19,6 +20,7 @@ const CARDS_TYPE = {
 const ARTISTS = {
     BAKAMAOKUN: { name: "bakamaokun", profile: { twitter: "https://x.com/bakamaokun" } },
     DEMONDRAMON: { name: "Demondramon", profile: { etsy: "https://www.etsy.com/mx/shop/IllustrationsBySam", instagram: "https://www.instagram.com/demondramon/" } },
+    DIGIMON_TCG: { name: "Digimon Card Game", profile: { web: "https://world.digimoncard.com/"} },
     DIM_CARD: { name: "Vital Bracelet Digital Monster DIM Card", profile: { "digimon net": "https://digimon.net/" } },
     ENRIQUE: { name: "Enrique", profile: { twitter: "https://x.com/Enrique_Digica", pixiv: "https://www.pixiv.net/en/users/57057371" } },
     HEKITO: { name: "Hekito", profile: { deviantart: "https://www.deviantart.com/hekitodigimon" } },
@@ -56,6 +58,10 @@ const TOKENS = {
             { img: "Empty_Purple_CF_1.png", type: CARDS_TYPE.COLOR_FRAME, color: COLORS.PURPLE },
             { img: "Empty_White_1.png", type: CARDS_TYPE.NORMAL, color: COLORS.WHITE },
             { img: "Empty_White_CF_1.png", type: CARDS_TYPE.COLOR_FRAME, color: COLORS.WHITE },
+            { img: "Empty_OF_1.png", artist: ARTISTS.DIGIMON_TCG.name, type: CARDS_TYPE.NORMAL, color: COLORS.NONE, official: true },
+            { img: "Empty_OF_2.png", artist: ARTISTS.DIGIMON_TCG.name, type: CARDS_TYPE.NORMAL, color: COLORS.NONE, official: true },
+            { img: "Empty_OF_3.png", artist: ARTISTS.DIGIMON_TCG.name, type: CARDS_TYPE.NORMAL, color: COLORS.NONE, official: true },
+            { img: "Empty_OF_4.png", artist: ARTISTS.DIGIMON_TCG.name, type: CARDS_TYPE.NORMAL, color: COLORS.NONE, official: true },
         ]
     },
     AMON_OF_CRIMSON_FLAME: {
@@ -450,6 +456,8 @@ const TOKENS = {
         name: "Diaboromon",
         color: COLORS.WHITE,
         cards: [
+            { img: "Diaboromon_OF_1.png", artist: ARTISTS.DIGIMON_TCG.name, type: CARDS_TYPE.NORMAL, official: true },
+            { img: "Diaboromon_OF_2.png", artist: ARTISTS.DIGIMON_TCG.name, type: CARDS_TYPE.FULL_ART, official: true },
             { img: "Diaboromon_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.NORMAL },
             { img: "Diaboromon_CF_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Diaboromon_FA_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.FULL_ART },
@@ -470,6 +478,21 @@ const TOKENS = {
             { img: "Diaboromon_CF_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Diaboromon_FA_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.FULL_ART },
             { img: "Diaboromon_VP_1.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
+        ]
+    },
+    PETRIFICATION: {
+        name: "Petrification",
+        color: COLORS.WHITE,
+        cards: [
+            { img: "Petrification_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Petrification_2.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_2.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_2.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Petrification_3.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_3.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_3.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     SUKAMON: {
