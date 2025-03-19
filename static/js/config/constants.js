@@ -480,6 +480,21 @@ const TOKENS = {
             { img: "Diaboromon_VP_1.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
         ]
     },
+    PETRIFICATION: {
+        name: "Petrification",
+        color: COLORS.WHITE,
+        cards: [
+            { img: "Petrification_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Petrification_2.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_2.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_2.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Petrification_3.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_3.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_3.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+        ]
+    },
     SUKAMON: {
         name: "Sukamon",
         color: COLORS.WHITE,
