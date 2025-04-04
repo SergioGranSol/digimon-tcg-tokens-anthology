@@ -19,6 +19,7 @@ const CARDS_TYPE = {
 
 const ARTISTS = {
     BAKAMAOKUN: { name: "bakamaokun", profile: { twitter: "https://x.com/bakamaokun" } },
+    CUNOMON: { name: "Cunomon", profile: { twitter: "https://x.com/Cunomon" } },
     DEMONDRAMON: { name: "Demondramon", profile: { etsy: "https://www.etsy.com/mx/shop/IllustrationsBySam", instagram: "https://www.instagram.com/demondramon/" } },
     DIGIMON_TCG: { name: "Digimon Card Game", profile: { web: "https://world.digimoncard.com/"} },
     DIM_CARD: { name: "Vital Bracelet Digital Monster DIM Card", profile: { "digimon net": "https://digimon.net/" } },
@@ -109,6 +110,9 @@ const TOKENS = {
             { img: "WarGrowlmon_CF_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "WarGrowlmon_FA_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.FULL_ART },
             { img: "WarGrowlmon_VP_2.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
+            { img: "WarGrowlmon_7.png", artist: ARTISTS.CUNOMON.name, type: CARDS_TYPE.NORMAL },
+            { img: "WarGrowlmon_CF_7.png", artist: ARTISTS.CUNOMON.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "WarGrowlmon_FA_7.png", artist: ARTISTS.CUNOMON.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     FAMILIAR: {
