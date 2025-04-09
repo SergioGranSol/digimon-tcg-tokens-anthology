@@ -322,6 +322,9 @@ const TOKENS = {
             { img: "Rapidmon_8.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
             { img: "Rapidmon_CF_8.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Rapidmon_FA_8.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Rapidmon_9.png", artist: ARTISTS.CUNOMON.name, type: CARDS_TYPE.NORMAL },
+            { img: "Rapidmon_CF_9.png", artist: ARTISTS.CUNOMON.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Rapidmon_FA_9.png", artist: ARTISTS.CUNOMON.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     KOHAGURUMON: {
