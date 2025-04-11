@@ -27,6 +27,7 @@ const ARTISTS = {
     HEKITO: { name: "Hekito", profile: { deviantart: "https://www.deviantart.com/hekitodigimon" } },
     INO_XLR: { name: "INO_XLR", profile: { twitter: "https://x.com/INO_XLR" } },
     IRASA: { name: "Irasa", profile: { twitter: "https://x.com/irasadesu" } },
+    ISEI0212: { name: "isei0212", profile: { twitter: "https://x.com/isei0212" } },
     KOH_TSURANUKI: { name: "Koh_Tsuranuki", profile: { twitter: "https://x.com/Koh_Tsuranuki" } },
     LBRIGHTBLADEL: { name: "lBrightBladel", profile: { twitter: "https://x.com/lbrightbladel", bluesky: "https://bsky.app/profile/lbrightbladel.bsky.social" } },
     PROFILE: { name: "Research Report Storage", profile: { "digimon net": "https://digimon.net/profile/" } },
@@ -500,6 +501,9 @@ const TOKENS = {
             { img: "Petrification_3.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
             { img: "Petrification_CF_3.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Petrification_FA_3.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Petrification_4.png", artist: ARTISTS.ISEI0212.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_4.png", artist: ARTISTS.ISEI0212.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_4.png", artist: ARTISTS.ISEI0212.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     SUKAMON: {
