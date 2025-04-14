@@ -252,6 +252,9 @@ const TOKENS = {
             { img: "Taomon_CF_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Taomon_FA_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.FULL_ART },
             { img: "Taomon_VP_2.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
+            { img: "Taomon_7.png", artist: ARTISTS.CUNOMON.name, type: CARDS_TYPE.NORMAL },
+            { img: "Taomon_CF_7.png", artist: ARTISTS.CUNOMON.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Taomon_FA_7.png", artist: ARTISTS.CUNOMON.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     UKA_NO_MITAMA: {
