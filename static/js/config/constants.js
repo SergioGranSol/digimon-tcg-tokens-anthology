@@ -24,10 +24,12 @@ const ARTISTS = {
     DIGIMON_TCG: { name: "Digimon Card Game", profile: { web: "https://world.digimoncard.com/"} },
     DIM_CARD: { name: "Vital Bracelet Digital Monster DIM Card", profile: { "digimon net": "https://digimon.net/" } },
     ENRIQUE: { name: "Enrique", profile: { twitter: "https://x.com/Enrique_Digica", pixiv: "https://www.pixiv.net/en/users/57057371" } },
+    FRANDFRUTOS: { name: "frandfrutos", profile: { twitter: "https://x.com/frandfrutos" } },
     HEKITO: { name: "Hekito", profile: { deviantart: "https://www.deviantart.com/hekitodigimon" } },
     INO_XLR: { name: "INO_XLR", profile: { twitter: "https://x.com/INO_XLR" } },
     IRASA: { name: "Irasa", profile: { twitter: "https://x.com/irasadesu" } },
     ISEI0212: { name: "isei0212", profile: { twitter: "https://x.com/isei0212" } },
+    KERATAYOKICHI: { name: "keratayokichi", profile: { twitter: "https://x.com/keratayokichi" } },
     KOH_TSURANUKI: { name: "Koh_Tsuranuki", profile: { twitter: "https://x.com/Koh_Tsuranuki" } },
     LBRIGHTBLADEL: { name: "lBrightBladel", profile: { twitter: "https://x.com/lbrightbladel", bluesky: "https://bsky.app/profile/lbrightbladel.bsky.social" } },
     PROFILE: { name: "Research Report Storage", profile: { "digimon net": "https://digimon.net/profile/" } },
@@ -40,6 +42,7 @@ const ARTISTS = {
     TEASPOON: { name : "Teaspoon", profile: { twitter: "https://x.com/Teas_poon" } },
     TRINITY_BURST: { name: "Trinity Burst Option Card", profile: { "digimon net": "https://digimoncard.com/" } },
     VPET: { name: "Digimon V-Pet", profile: { "digimon net": "https://digimon.net/" } },
+    XABIMARU: { name: "Xabimaru", profile: { web: "https://xabimaruru.carrd.co/", twitter: "https://x.com/Xabimaruru", artstation: "https://www.artstation.com/xabimaru" } },
 }
 
 const TOKENS = {
@@ -157,6 +160,9 @@ const TOKENS = {
             { img: "Familiar_12.png", artist: ARTISTS.HEKITO.name, type: CARDS_TYPE.NORMAL },
             { img: "Familiar_CF_12.png", artist: ARTISTS.HEKITO.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Familiar_FA_12.png", artist: ARTISTS.HEKITO.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Familiar_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
+            { img: "Familiar_CF_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Familiar_FA_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     PIPE_FOX: {
@@ -273,6 +279,9 @@ const TOKENS = {
             { img: "Uka_no_Mitama_4.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.NORMAL },
             { img: "Uka_no_Mitama_CF_4.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Uka_no_Mitama_FA_4.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Uka_no_Mitama_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
+            { img: "Uka_no_Mitama_CF_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Uka_no_Mitama_FA_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     UMON_OF_BLUE_THUNDER: {
@@ -386,6 +395,9 @@ const TOKENS = {
             { img: "Fujitsumon_5.png", artist: ARTISTS.HEKITO.name, type: CARDS_TYPE.NORMAL },
             { img: "Fujitsumon_CF_5.png", artist: ARTISTS.HEKITO.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Fujitsumon_FA_5.png", artist: ARTISTS.HEKITO.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Fujitsumon_6.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
+            { img: "Fujitsumon_CF_6.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Fujitsumon_FA_6.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     GYUUKIMON: {
@@ -419,6 +431,9 @@ const TOKENS = {
             { img: "Volée_&_Zerdrücken_4.png", artist: ARTISTS.SHARKMON.name, type: CARDS_TYPE.NORMAL },
             { img: "Volée_&_Zerdrücken_CF_4.png", artist: ARTISTS.SHARKMON.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Volée_&_Zerdrücken_FA_4.png", artist: ARTISTS.SHARKMON.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Volée_&_Zerdrücken_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
+            { img: "Volée_&_Zerdrücken_CF_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Volée_&_Zerdrücken_FA_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     ATHO_RENE_AND_POR: {
@@ -461,6 +476,9 @@ const TOKENS = {
             { img: "Atho_René_&_Por_12.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.NORMAL },
             { img: "Atho_René_&_Por_CF_12.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Atho_René_&_Por_FA_12.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Atho_René_&_Por_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
+            { img: "Atho_René_&_Por_CF_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Atho_René_&_Por_FA_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     DIABOROMON: {
@@ -489,6 +507,15 @@ const TOKENS = {
             { img: "Diaboromon_CF_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Diaboromon_FA_6.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.FULL_ART },
             { img: "Diaboromon_VP_1.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
+            { img: "Diaboromon_7.png", artist: ARTISTS.KERATAYOKICHI.name, type: CARDS_TYPE.NORMAL },
+            { img: "Diaboromon_CF_7.png", artist: ARTISTS.KERATAYOKICHI.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Diaboromon_FA_7.png", artist: ARTISTS.KERATAYOKICHI.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Diaboromon_8.png", artist: ARTISTS.FRANDFRUTOS.name, type: CARDS_TYPE.NORMAL },
+            { img: "Diaboromon_CF_8.png", artist: ARTISTS.FRANDFRUTOS.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Diaboromon_FA_8.png", artist: ARTISTS.FRANDFRUTOS.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Diaboromon_9.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
+            { img: "Diaboromon_CF_9.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Diaboromon_FA_9.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     PETRIFICATION: {
@@ -537,6 +564,9 @@ const TOKENS = {
             { img: "Sukamon_CF_7.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Sukamon_FA_7.png", artist: ARTISTS.DIM_CARD.name, type: CARDS_TYPE.FULL_ART },
             { img: "Sukamon_VP_2.png", artist: ARTISTS.VPET.name, type: CARDS_TYPE.VPET_FRAME },
+            { img: "Sukamon_8.png", artist: ARTISTS.FRANDFRUTOS.name, type: CARDS_TYPE.NORMAL },
+            { img: "Sukamon_CF_8.png", artist: ARTISTS.FRANDFRUTOS.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Sukamon_FA_8.png", artist: ARTISTS.FRANDFRUTOS.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
 }
