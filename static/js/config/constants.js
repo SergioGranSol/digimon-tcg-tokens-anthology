@@ -19,6 +19,7 @@ const CARDS_TYPE = {
 
 const ARTISTS = {
     BAKAMAOKUN: { name: "bakamaokun", profile: { twitter: "https://x.com/bakamaokun" } },
+    BOB_HOBBYGAME: { name: "Bob_HobbyGame", profile: { twitter: "https://x.com/Bob_HobbyGame" } },
     CUNOMON: { name: "Cunomon", profile: { twitter: "https://x.com/Cunomon" } },
     DEMONDRAMON: { name: "Demondramon", profile: { etsy: "https://www.etsy.com/mx/shop/IllustrationsBySam", instagram: "https://www.instagram.com/demondramon/" } },
     DIGIMON_TCG: { name: "Digimon Card Game", profile: { web: "https://world.digimoncard.com/"} },
@@ -32,6 +33,7 @@ const ARTISTS = {
     KERATAYOKICHI: { name: "keratayokichi", profile: { twitter: "https://x.com/keratayokichi" } },
     KOH_TSURANUKI: { name: "Koh_Tsuranuki", profile: { twitter: "https://x.com/Koh_Tsuranuki" } },
     LBRIGHTBLADEL: { name: "lBrightBladel", profile: { twitter: "https://x.com/lbrightbladel", bluesky: "https://bsky.app/profile/lbrightbladel.bsky.social" } },
+    MARIOGAGABRIEL: { name: "MarioGaGabriel", profile: { web: "https://linktr.ee/MarioGaGabriel", twitter: "https://x.com/MarioGaGabriel" } },
     PROFILE: { name: "Research Report Storage", profile: { "digimon net": "https://digimon.net/profile/" } },
     REFERENCE_BOOK: { name: "Digimon Reference Book", profile: { "digimon net": "https://digimon.net/reference/" } },
     RERAID: { name: "_reRaid", profile: { twitter: "https://x.com/_reRaid", pixiv: "https://www.pixiv.net/en/users/4701422", bluesky: "https://bsky.app/profile/reraid.bsky.social", artstation: "https://www.artstation.com/donghyeok" } },
@@ -534,6 +536,12 @@ const TOKENS = {
             { img: "Petrification_4.png", artist: ARTISTS.ISEI0212.name, type: CARDS_TYPE.NORMAL },
             { img: "Petrification_CF_4.png", artist: ARTISTS.ISEI0212.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Petrification_FA_4.png", artist: ARTISTS.ISEI0212.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Petrification_5.png", artist: ARTISTS.MARIOGAGABRIEL.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_5.png", artist: ARTISTS.MARIOGAGABRIEL.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_5.png", artist: ARTISTS.MARIOGAGABRIEL.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Petrification_6.png", artist: ARTISTS.BOB_HOBBYGAME.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_6.png", artist: ARTISTS.BOB_HOBBYGAME.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_6.png", artist: ARTISTS.BOB_HOBBYGAME.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     SUKAMON: {
