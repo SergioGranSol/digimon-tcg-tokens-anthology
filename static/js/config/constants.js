@@ -542,6 +542,9 @@ const TOKENS = {
             { img: "Petrification_6.png", artist: ARTISTS.BOB_HOBBYGAME.name, type: CARDS_TYPE.NORMAL },
             { img: "Petrification_CF_6.png", artist: ARTISTS.BOB_HOBBYGAME.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Petrification_FA_6.png", artist: ARTISTS.BOB_HOBBYGAME.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Petrification_7.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_7.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_FA_7.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     SUKAMON: {
