@@ -37,6 +37,7 @@ const ARTISTS = {
     PROFILE: { name: "Research Report Storage", profile: { "digimon net": "https://digimon.net/profile/" } },
     REFERENCE_BOOK: { name: "Digimon Reference Book", profile: { "digimon net": "https://digimon.net/reference/" } },
     RERAID: { name: "_reRaid", profile: { twitter: "https://x.com/_reRaid", pixiv: "https://www.pixiv.net/en/users/4701422", bluesky: "https://bsky.app/profile/reraid.bsky.social", artstation: "https://www.artstation.com/donghyeok" } },
+    SERGIOGRANSOL: { name: "SergioGranSol", profile: { twitter: "https://x.com/SergioGranSol" } },
     SHARKMON: { name: "Sharkmon", profile: { deviantart: "https://www.deviantart.com/sharkmon", naver: "https://blog.naver.com/tmfrl3316" } },
     SINOBALI: { name: "Sinobali", profile: { web: "https://sinobali.com/", twitter: "https://x.com/sinobali", instagram: "https://www.instagram.com/sinobali_digimon", patreon: "https://www.patreon.com/sinobali" } },
     SPARERIBS: { name: "Spareribs", profile: { twitter: "https://x.com/Spareribs_777", pixiv: "https://www.pixiv.net/en/users/47170637" } },
@@ -284,6 +285,7 @@ const TOKENS = {
             { img: "Uka_no_Mitama_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
             { img: "Uka_no_Mitama_CF_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Uka_no_Mitama_FA_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Uka_no_Mitama_SP_1.png", artist: ARTISTS.SERGIOGRANSOL.name, type: CARDS_TYPE.SPECIAL },
         ]
     },
     UMON_OF_BLUE_THUNDER: {
