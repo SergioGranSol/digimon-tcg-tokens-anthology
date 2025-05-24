@@ -166,6 +166,9 @@ const TOKENS = {
             { img: "Familiar_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
             { img: "Familiar_CF_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Familiar_FA_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Familiar_14.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Familiar_CF_14.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Familiar_FA_14.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     PIPE_FOX: {
