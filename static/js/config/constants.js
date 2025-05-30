@@ -34,6 +34,7 @@ const ARTISTS = {
     KOH_TSURANUKI: { name: "Koh_Tsuranuki", profile: { twitter: "https://x.com/Koh_Tsuranuki" } },
     LBRIGHTBLADEL: { name: "lBrightBladel", profile: { twitter: "https://x.com/lbrightbladel", bluesky: "https://bsky.app/profile/lbrightbladel.bsky.social" } },
     MARIOGAGABRIEL: { name: "MarioGaGabriel", profile: { web: "https://linktr.ee/MarioGaGabriel", twitter: "https://x.com/MarioGaGabriel" } },
+    OMIYAKOO: { name: "omiyakoo", profile: { twitter: "https://x.com/omiyakoo" } },
     PROFILE: { name: "Research Report Storage", profile: { "digimon net": "https://digimon.net/profile/" } },
     REFERENCE_BOOK: { name: "Digimon Reference Book", profile: { "digimon net": "https://digimon.net/reference/" } },
     RERAID: { name: "_reRaid", profile: { twitter: "https://x.com/_reRaid", pixiv: "https://www.pixiv.net/en/users/4701422", bluesky: "https://bsky.app/profile/reraid.bsky.social", artstation: "https://www.artstation.com/donghyeok" } },
@@ -289,6 +290,9 @@ const TOKENS = {
             { img: "Uka_no_Mitama_CF_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Uka_no_Mitama_FA_5.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
             { img: "Uka_no_Mitama_SP_1.png", artist: ARTISTS.SERGIOGRANSOL.name, type: CARDS_TYPE.SPECIAL },
+            { img: "Uka_no_Mitama_6.png", artist: ARTISTS.OMIYAKOO.name, type: CARDS_TYPE.NORMAL },
+            { img: "Uka_no_Mitama_CF_6.png", artist: ARTISTS.OMIYAKOO.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Uka_no_Mitama_FA_6.png", artist: ARTISTS.OMIYAKOO.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     UMON_OF_BLUE_THUNDER: {
