@@ -44,6 +44,7 @@ const ARTISTS = {
     SPARERIBS: { name: "Spareribs", profile: { twitter: "https://x.com/Spareribs_777", pixiv: "https://www.pixiv.net/en/users/47170637" } },
     TAI: { name: "Tai", profile: { twitter: "https://x.com/cheungsk1213" } },
     TEASPOON: { name : "Teaspoon", profile: { twitter: "https://x.com/Teas_poon" } },
+    THANYATHEPTH: { name : "ThanyathepTH", profile: { twitter: "https://x.com/ThanyathepTH" } },
     TRINITY_BURST: { name: "Trinity Burst Option Card", profile: { "digimon net": "https://digimoncard.com/" } },
     VPET: { name: "Digimon V-Pet", profile: { "digimon net": "https://digimon.net/" } },
     XABIMARU: { name: "Xabimaru", profile: { web: "https://xabimaruru.carrd.co/", twitter: "https://x.com/Xabimaruru", artstation: "https://www.artstation.com/xabimaru" } },
@@ -92,6 +93,9 @@ const TOKENS = {
             { img: "Amon_of_Crimson_Flame_5.png", artist: ARTISTS.TAI.name, type: CARDS_TYPE.NORMAL },
             { img: "Amon_of_Crimson_Flame_CF_5.png", artist: ARTISTS.TAI.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Amon_of_Crimson_Flame_FA_5.png", artist: ARTISTS.TAI.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Amon_of_Crimson_Flame_6.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.NORMAL },
+            { img: "Amon_of_Crimson_Flame_CF_6.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Amon_of_Crimson_Flame_FA_6.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     WARGROWLMON: {
@@ -170,6 +174,9 @@ const TOKENS = {
             { img: "Familiar_14.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
             { img: "Familiar_CF_14.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Familiar_FA_14.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Familiar_15.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.NORMAL },
+            { img: "Familiar_CF_15.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Familiar_FA_15.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     PIPE_FOX: {
@@ -314,6 +321,9 @@ const TOKENS = {
             { img: "Umon_of_Blue_Thunder_5.png", artist: ARTISTS.TAI.name, type: CARDS_TYPE.NORMAL },
             { img: "Umon_of_Blue_Thunder_CF_5.png", artist: ARTISTS.TAI.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Umon_of_Blue_Thunder_FA_5.png", artist: ARTISTS.TAI.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Umon_of_Blue_Thunder_6.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.NORMAL },
+            { img: "Umon_of_Blue_Thunder_CF_6.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Umon_of_Blue_Thunder_FA_6.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     RAPIDMON: {
@@ -527,6 +537,9 @@ const TOKENS = {
             { img: "Diaboromon_9.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
             { img: "Diaboromon_CF_9.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Diaboromon_FA_9.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Diaboromon_10.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.NORMAL },
+            { img: "Diaboromon_CF_10.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Diaboromon_FA_10.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     PETRIFICATION: {
