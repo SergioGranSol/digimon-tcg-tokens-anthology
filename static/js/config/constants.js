@@ -18,6 +18,7 @@ const CARDS_TYPE = {
 }
 
 const ARTISTS = {
+    CERVANTES: { name: "7Cervantes", profile: { twitter: "https://x.com/7Cervantes" } },
     BAKAMAOKUN: { name: "bakamaokun", profile: { twitter: "https://x.com/bakamaokun" } },
     BOB_HOBBYGAME: { name: "Bob_HobbyGame", profile: { twitter: "https://x.com/Bob_HobbyGame" } },
     CUNOMON: { name: "Cunomon", profile: { twitter: "https://x.com/Cunomon" } },
@@ -300,6 +301,12 @@ const TOKENS = {
             { img: "Uka_no_Mitama_6.png", artist: ARTISTS.OMIYAKOO.name, type: CARDS_TYPE.NORMAL },
             { img: "Uka_no_Mitama_CF_6.png", artist: ARTISTS.OMIYAKOO.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Uka_no_Mitama_FA_6.png", artist: ARTISTS.OMIYAKOO.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Uka_no_Mitama_7.png", artist: ARTISTS.CERVANTES.name, type: CARDS_TYPE.NORMAL },
+            { img: "Uka_no_Mitama_CF_7.png", artist: ARTISTS.CERVANTES.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Uka_no_Mitama_FA_7.png", artist: ARTISTS.CERVANTES.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Uka_no_Mitama_8.png", artist: ARTISTS.CERVANTES.name, type: CARDS_TYPE.NORMAL },
+            { img: "Uka_no_Mitama_CF_8.png", artist: ARTISTS.CERVANTES.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Uka_no_Mitama_FA_8.png", artist: ARTISTS.CERVANTES.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     UMON_OF_BLUE_THUNDER: {
