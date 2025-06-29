@@ -47,6 +47,7 @@ const ARTISTS = {
     THANYATHEPTH: { name : "ThanyathepTH", profile: { twitter: "https://x.com/ThanyathepTH" } },
     TRINITY_BURST: { name: "Trinity Burst Option Card", profile: { "digimon net": "https://digimoncard.com/" } },
     XABIMARU: { name: "Xabimaru", profile: { web: "https://xabimaruru.carrd.co/", twitter: "https://x.com/Xabimaruru", artstation: "https://www.artstation.com/xabimaru" } },
+    XP3CTRO: { name: "Xp3ctro", profile: { web: "https://xpectro.store/", twitter: "https://x.com/Xp3ctro_Art", instagram: "https://www.instagram.com/xp3ctro" } },
 }
 
 const TOKENS = {
@@ -180,6 +181,9 @@ const TOKENS = {
             { img: "Familiar_15.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.NORMAL },
             { img: "Familiar_CF_15.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Familiar_FA_15.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Familiar_16.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.NORMAL },
+            { img: "Familiar_CF_16.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Familiar_FA_16.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     PIPE_FOX: {
@@ -249,6 +253,9 @@ const TOKENS = {
             { img: "Pipe_Fox_21.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.NORMAL },
             { img: "Pipe_Fox_CF_21.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Pipe_Fox_FA_21.png", artist: ARTISTS.ENRIQUE.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Pipe_Fox_22.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.NORMAL },
+            { img: "Pipe_Fox_CF_22.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Pipe_Fox_FA_22.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     TAOMON: {
@@ -307,6 +314,9 @@ const TOKENS = {
             { img: "Uka_no_Mitama_8.png", artist: ARTISTS.CERVANTES.name, type: CARDS_TYPE.NORMAL },
             { img: "Uka_no_Mitama_CF_8.png", artist: ARTISTS.CERVANTES.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Uka_no_Mitama_FA_8.png", artist: ARTISTS.CERVANTES.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Uka_no_Mitama_9.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.NORMAL },
+            { img: "Uka_no_Mitama_CF_9.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Uka_no_Mitama_FA_9.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     UMON_OF_BLUE_THUNDER: {
@@ -505,6 +515,9 @@ const TOKENS = {
             { img: "Atho_René_&_Por_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.NORMAL },
             { img: "Atho_René_&_Por_CF_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Atho_René_&_Por_FA_13.png", artist: ARTISTS.XABIMARU.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Atho_René_&_Por_14.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.NORMAL },
+            { img: "Atho_René_&_Por_CF_14.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Atho_René_&_Por_FA_14.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     DIABOROMON: {
@@ -544,6 +557,9 @@ const TOKENS = {
             { img: "Diaboromon_10.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.NORMAL },
             { img: "Diaboromon_CF_10.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Diaboromon_FA_10.png", artist: ARTISTS.THANYATHEPTH.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Diaboromon_11.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.NORMAL },
+            { img: "Diaboromon_CF_11.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Diaboromon_FA_11.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     PETRIFICATION: {
