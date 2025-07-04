@@ -39,6 +39,7 @@ const ARTISTS = {
     PROFILE: { name: "Research Report Storage", profile: { "digimon net": "https://digimon.net/profile/" } },
     REFERENCE_BOOK: { name: "Digimon Reference Book", profile: { "digimon net": "https://digimon.net/reference/" } },
     RERAID: { name: "_reRaid", profile: { twitter: "https://x.com/_reRaid", pixiv: "https://www.pixiv.net/en/users/4701422", bluesky: "https://bsky.app/profile/reraid.bsky.social", artstation: "https://www.artstation.com/donghyeok" } },
+    SEIHOU917: { name: "seihou917", profile: { twitter: "https://x.com/seihou917", pixiv: "https://www.pixiv.net/en/users/17357" } },
     SERGIOGRANSOL: { name: "SergioGranSol", profile: { twitter: "https://x.com/SergioGranSol" } },
     SHARKMON: { name: "Sharkmon", profile: { deviantart: "https://www.deviantart.com/sharkmon", naver: "https://blog.naver.com/tmfrl3316" } },
     SINOBALI: { name: "Sinobali", profile: { web: "https://sinobali.com/", twitter: "https://x.com/sinobali", instagram: "https://www.instagram.com/sinobali_digimon", patreon: "https://www.patreon.com/sinobali" } },
@@ -740,6 +741,10 @@ const TOKENS = {
             { img: "Petrification_CF_7.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Petrification_VP_7.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.VPET },
             { img: "Petrification_FA_7.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Petrification_8.png", artist: ARTISTS.SEIHOU917.name, type: CARDS_TYPE.NORMAL },
+            { img: "Petrification_CF_8.png", artist: ARTISTS.SEIHOU917.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Petrification_VP_8.png", artist: ARTISTS.SEIHOU917.name, type: CARDS_TYPE.VPET },
+            { img: "Petrification_FA_8.png", artist: ARTISTS.SEIHOU917.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     SUKAMON: {
