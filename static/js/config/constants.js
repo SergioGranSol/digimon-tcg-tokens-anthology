@@ -27,6 +27,7 @@ const ARTISTS = {
     DIM_CARD: { name: "Vital Bracelet Digital Monster DIM Card", profile: { "digimon net": "https://digimon.net/" } },
     ENRIQUE: { name: "Enrique", profile: { twitter: "https://x.com/Enrique_Digica", pixiv: "https://www.pixiv.net/en/users/57057371" } },
     FRANDFRUTOS: { name: "frandfrutos", profile: { twitter: "https://x.com/frandfrutos" } },
+    GERO_RIVERA: { name: "gero_rivera", profile: { twitter: "https://x.com/gero_rivera" } },
     HEKITO: { name: "Hekito", profile: { deviantart: "https://www.deviantart.com/hekitodigimon" } },
     INO_XLR: { name: "INO_XLR", profile: { twitter: "https://x.com/INO_XLR" } },
     IRASA: { name: "Irasa", profile: { twitter: "https://x.com/irasadesu" } },
@@ -48,6 +49,7 @@ const ARTISTS = {
     TEASPOON: { name : "Teaspoon", profile: { twitter: "https://x.com/Teas_poon" } },
     THANYATHEPTH: { name : "ThanyathepTH", profile: { twitter: "https://x.com/ThanyathepTH" } },
     TRINITY_BURST: { name: "Trinity Burst Option Card", profile: { "digimon net": "https://digimoncard.com/" } },
+    UNKNOWN: { name: "Unknown illustrator", profile: { } },
     XABIMARU: { name: "Xabimaru", profile: { web: "https://xabimaruru.carrd.co/", twitter: "https://x.com/Xabimaruru", artstation: "https://www.artstation.com/xabimaru" } },
     XP3CTRO: { name: "Xp3ctro", profile: { web: "https://xpectro.store/", twitter: "https://x.com/Xp3ctro_Art", instagram: "https://www.instagram.com/xp3ctro" } },
 }
@@ -745,6 +747,24 @@ const TOKENS = {
             { img: "Petrification_CF_8.png", artist: ARTISTS.SEIHOU917.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Petrification_VP_8.png", artist: ARTISTS.SEIHOU917.name, type: CARDS_TYPE.VPET },
             { img: "Petrification_FA_8.png", artist: ARTISTS.SEIHOU917.name, type: CARDS_TYPE.FULL_ART },
+        ]
+    },
+    HINUKAMUY: {
+        name: "Hinukamuy",
+        color: COLORS.WHITE,
+        cards: [
+            { img: "Hinukamuy_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.NORMAL },
+            { img: "Hinukamuy_CF_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Hinukamuy_VP_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.VPET },
+            { img: "Hinukamuy_FA_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Hinukamuy_2.png", artist: ARTISTS.UNKNOWN.name, type: CARDS_TYPE.NORMAL },
+            { img: "Hinukamuy_CF_2.png", artist: ARTISTS.UNKNOWN.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Hinukamuy_VP_2.png", artist: ARTISTS.UNKNOWN.name, type: CARDS_TYPE.VPET },
+            { img: "Hinukamuy_FA_2.png", artist: ARTISTS.UNKNOWN.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Hinukamuy_3.png", artist: ARTISTS.GERO_RIVERA.name, type: CARDS_TYPE.NORMAL },
+            { img: "Hinukamuy_CF_3.png", artist: ARTISTS.GERO_RIVERA.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Hinukamuy_VP_3.png", artist: ARTISTS.GERO_RIVERA.name, type: CARDS_TYPE.VPET },
+            { img: "Hinukamuy_FA_3.png", artist: ARTISTS.GERO_RIVERA.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     SUKAMON: {
