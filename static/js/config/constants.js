@@ -325,6 +325,10 @@ const TOKENS = {
             { img: "Pipe_Fox_CF_22.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Pipe_Fox_VP_22.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.VPET },
             { img: "Pipe_Fox_FA_22.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Pipe_Fox_26.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.NORMAL },
+            { img: "Pipe_Fox_CF_26.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Pipe_Fox_VP_26.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.VPET },
+            { img: "Pipe_Fox_FA_26.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     TAOMON: {
@@ -765,6 +769,10 @@ const TOKENS = {
             { img: "Hinukamuy_CF_3.png", artist: ARTISTS.GERO_RIVERA.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Hinukamuy_VP_3.png", artist: ARTISTS.GERO_RIVERA.name, type: CARDS_TYPE.VPET },
             { img: "Hinukamuy_FA_3.png", artist: ARTISTS.GERO_RIVERA.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Hinukamuy_4.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.NORMAL },
+            { img: "Hinukamuy_CF_4.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Hinukamuy_VP_4.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.VPET },
+            { img: "Hinukamuy_FA_4.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     SUKAMON: {
