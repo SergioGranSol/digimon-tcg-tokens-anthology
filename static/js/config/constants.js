@@ -19,6 +19,7 @@ const CARDS_TYPE = {
 
 const ARTISTS = {
     CERVANTES: { name: "7Cervantes", profile: { twitter: "https://x.com/7Cervantes" } },
+    ABSOLUMART: { name: "AbsolumArt", profile: { twitter: "https://x.com/AbsolumArt" } },
     BAKAMAOKUN: { name: "bakamaokun", profile: { twitter: "https://x.com/bakamaokun" } },
     BOB_HOBBYGAME: { name: "Bob_HobbyGame", profile: { twitter: "https://x.com/Bob_HobbyGame" } },
     CHAOTICMEATLOAF: { name: "chaoticmeatloaf", profile: { twitter: "https://x.com/chaoticmeatloaf" } },
@@ -736,6 +737,10 @@ const TOKENS = {
             { img: "Diaboromon_CF_11.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Diaboromon_VP_11.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.VPET },
             { img: "Diaboromon_FA_11.png", artist: ARTISTS.XP3CTRO.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Diaboromon_12.png", artist: ARTISTS.ABSOLUMART.name, type: CARDS_TYPE.NORMAL },
+            { img: "Diaboromon_CF_12.png", artist: ARTISTS.ABSOLUMART.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Diaboromon_VP_12.png", artist: ARTISTS.ABSOLUMART.name, type: CARDS_TYPE.VPET },
+            { img: "Diaboromon_FA_12.png", artist: ARTISTS.ABSOLUMART.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     PETRIFICATION: {
