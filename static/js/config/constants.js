@@ -20,6 +20,7 @@ const CARDS_TYPE = {
 const ARTISTS = {
     CERVANTES: { name: "7Cervantes", profile: { twitter: "https://x.com/7Cervantes" } },
     ABSOLUMART: { name: "AbsolumArt", profile: { twitter: "https://x.com/AbsolumArt" } },
+    ASHIONGLEE: { name: "Ashionglee", profile: { twitter: "https://x.com/Ashionglee" } },
     BAKAMAOKUN: { name: "bakamaokun", profile: { twitter: "https://x.com/bakamaokun" } },
     BOB_HOBBYGAME: { name: "Bob_HobbyGame", profile: { twitter: "https://x.com/Bob_HobbyGame" } },
     CHAOTICMEATLOAF: { name: "chaoticmeatloaf", profile: { twitter: "https://x.com/chaoticmeatloaf" } },
@@ -39,6 +40,7 @@ const ARTISTS = {
     KOH_TSURANUKI: { name: "Koh_Tsuranuki", profile: { twitter: "https://x.com/Koh_Tsuranuki" } },
     LBRIGHTBLADEL: { name: "lBrightBladel", profile: { twitter: "https://x.com/lbrightbladel", bluesky: "https://bsky.app/profile/lbrightbladel.bsky.social" } },
     MARIOGAGABRIEL: { name: "MarioGaGabriel", profile: { web: "https://linktr.ee/MarioGaGabriel", twitter: "https://x.com/MarioGaGabriel" } },
+    NOPHY: { name: "Nophy", profile: { } },
     OMIYAKOO: { name: "omiyakoo", profile: { twitter: "https://x.com/omiyakoo" } },
     PROFILE: { name: "Research Report Storage", profile: { "digimon net": "https://digimon.net/profile/" } },
     REFERENCE_BOOK: { name: "Digimon Reference Book", profile: { "digimon net": "https://digimon.net/reference/" } },
@@ -47,6 +49,7 @@ const ARTISTS = {
     SEIHOU917: { name: "seihou917", profile: { twitter: "https://x.com/seihou917", pixiv: "https://www.pixiv.net/en/users/17357" } },
     SERGIOGRANSOL: { name: "SergioGranSol", profile: { twitter: "https://x.com/SergioGranSol" } },
     SHARKMON: { name: "Sharkmon", profile: { deviantart: "https://www.deviantart.com/sharkmon", naver: "https://blog.naver.com/tmfrl3316" } },
+    SINGINGHAM: { name: "singingham", profile: { twitter: "https://x.com/singingham" } },
     SINOBALI: { name: "Sinobali", profile: { web: "https://sinobali.com/", twitter: "https://x.com/sinobali", instagram: "https://www.instagram.com/sinobali_digimon", patreon: "https://www.patreon.com/sinobali" } },
     SPARERIBS: { name: "Spareribs", profile: { twitter: "https://x.com/Spareribs_777", pixiv: "https://www.pixiv.net/en/users/47170637" } },
     TAI: { name: "Tai", profile: { twitter: "https://x.com/cheungsk1213" } },
@@ -349,6 +352,10 @@ const TOKENS = {
             { img: "Pipe_Fox_CF_29.png", artist: ARTISTS.SCAITHNIC.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Pipe_Fox_VP_29.png", artist: ARTISTS.SCAITHNIC.name, type: CARDS_TYPE.VPET },
             { img: "Pipe_Fox_FA_29.png", artist: ARTISTS.SCAITHNIC.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Pipe_Fox_30.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.NORMAL },
+            { img: "Pipe_Fox_CF_30.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Pipe_Fox_VP_30.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.VPET },
+            { img: "Pipe_Fox_FA_30.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     TAOMON: {
@@ -840,6 +847,18 @@ const TOKENS = {
             { img: "Sukamon_CF_8.png", artist: ARTISTS.FRANDFRUTOS.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Sukamon_VP_8.png", artist: ARTISTS.FRANDFRUTOS.name, type: CARDS_TYPE.VPET },
             { img: "Sukamon_FA_8.png", artist: ARTISTS.FRANDFRUTOS.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Sukamon_9.png", artist: ARTISTS.NOPHY.name, type: CARDS_TYPE.NORMAL },
+            { img: "Sukamon_CF_9.png", artist: ARTISTS.NOPHY.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Sukamon_VP_9.png", artist: ARTISTS.NOPHY.name, type: CARDS_TYPE.VPET },
+            { img: "Sukamon_FA_9.png", artist: ARTISTS.NOPHY.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Sukamon_10.png", artist: ARTISTS.SINGINGHAM.name, type: CARDS_TYPE.NORMAL },
+            { img: "Sukamon_CF_10.png", artist: ARTISTS.SINGINGHAM.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Sukamon_VP_10.png", artist: ARTISTS.SINGINGHAM.name, type: CARDS_TYPE.VPET },
+            { img: "Sukamon_FA_10.png", artist: ARTISTS.SINGINGHAM.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Sukamon_11.png", artist: ARTISTS.ASHIONGLEE.name, type: CARDS_TYPE.NORMAL },
+            { img: "Sukamon_CF_11.png", artist: ARTISTS.ASHIONGLEE.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Sukamon_VP_11.png", artist: ARTISTS.ASHIONGLEE.name, type: CARDS_TYPE.VPET },
+            { img: "Sukamon_FA_11.png", artist: ARTISTS.ASHIONGLEE.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
 }
