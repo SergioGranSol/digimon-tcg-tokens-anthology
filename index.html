@@ -35,12 +35,6 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         </div>
-        <!-- <div class="col-sm-12 col-md-8">
-          <div class="alert alert-important alert-dismissible bg-lime bg-gradient fs-5 fw-bolder fst-italic border-0 rounded-5">
-            Wanna share a token?? Send the clean image, profiles and the permission of the artist by DM to <a target="_blank" href="https://x.com/SergioGranSol">my X account</a> and I'll add the token card frames
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-        </div> -->
       </div>
       <div class="text-center mx-md-auto mx-4">
         <div class="input-group input-group-sm mt-1">
@@ -64,11 +58,6 @@
           </select>
         </div>
         <div class="input-group input-group-sm mt-1">
-          <span class="input-group-text bg-primary text-white fw-bold rounded-start-2 ps-2 w-16">Official card:</span>
-          <select class="form-select w-33" id="official" name="official" aria-label="official" onchange="findTokens();">
-            <option value="true">Yes</option>
-            <option selected="" value="false">No</option>
-          </select>
           <span class="input-group-text bg-primary text-white fw-bold w-16">Language:</span>
           <select class="form-select w-33" id="language" name="language" aria-label="language" onchange="findTokens();">
             <option selected="" value="en">English</option>
@@ -163,7 +152,6 @@
         .attr("data-type", card.type)
         .attr("data-artist", card.artist)
         .attr("data-language", language)
-        .attr("data-official", card.official ? card.official : false)
         .attr("data-token", TOKENS[token].name)
         .addClass(`col-3 ${card.type == CARDS_TYPE.COLOR_FRAME && card.artist == ARTISTS.REFERENCE_BOOK.name && language == "en" ? "" : "d-none"}`);
       const innerDiv = $(document.createElement("div"))
@@ -209,17 +197,15 @@
       const artist = $("#artist").val();
       const type = $("#type").val();
       const language = $("#language").val();
-      const official = $("#official").val();
       const cards = $("#cards-container > div");
       for (const card of cards) {
         const cardEl = $(card);
         const showCard =
-          (token != "" ? cardEl.attr("data-token") == token : true) &&
-          (color != "" ? cardEl.attr("data-color") == color : true) &&
-          (artist != "" ? cardEl.attr("data-artist") == artist : true) &&
-          (type != "" ? cardEl.attr("data-type") == type : true) &&
-          (language != "" ? cardEl.attr("data-language") == language : true) &&
-          (official != "" ? cardEl.attr("data-official") == official : true);
+          (token == "" ? true : cardEl.attr("data-token") == token) &&
+          (color == "" ? true : cardEl.attr("data-color") == color) &&
+          (artist == "" ? true : cardEl.attr("data-artist") == artist) &&
+          (type == "" ? true : cardEl.attr("data-type") == type) &&
+          (language == "" ? true : cardEl.attr("data-language") == language);
         if (showCard) {
           cardEl.removeClass("d-none");
           const img = cardEl.children(":first").children(":first");
