@@ -164,6 +164,8 @@ const TOKENS = {
         cards: [
             { img: "Paishu_CF_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Paishu_FA_1.png", artist: ARTISTS.REFERENCE_BOOK.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Paishu_CF_2.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Paishu_FA_2.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     PIPE_FOX: {
@@ -352,6 +354,8 @@ const TOKENS = {
             { img: "Kotenken_FA_3.png", artist: ARTISTS.NEW_CENTURY.name, type: CARDS_TYPE.FULL_ART },
             { img: "Kotenken_CF_4.png", artist: ARTISTS.NEW_CENTURY.name, type: CARDS_TYPE.COLOR_FRAME },
             { img: "Kotenken_FA_4.png", artist: ARTISTS.NEW_CENTURY.name, type: CARDS_TYPE.FULL_ART },
+            { img: "Kotenken_CF_5.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.COLOR_FRAME },
+            { img: "Kotenken_FA_5.png", artist: ARTISTS.DEMONDRAMON.name, type: CARDS_TYPE.FULL_ART },
         ]
     },
     FUJITSUMON: {
